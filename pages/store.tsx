@@ -2,7 +2,7 @@ import { InputEvent } from ".";
 import { useAppStore } from "../store";
 import { IEvents as IUserEvents } from "../store/userInfo";
 
-const SetUserForm = () => {
+export const SetUserForm = () => {
   const {
     username: storeUsername,
     email: storeEmail,
@@ -34,7 +34,7 @@ const SetUserForm = () => {
   );
 };
 
-const ToggleAuthWithStore = () => {
+export const ToggleAuthWithStore = () => {
   const { isAuthenticated, dispatch } = useAppStore("isAuthenticated");
 
   return (
